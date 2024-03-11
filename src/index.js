@@ -1,5 +1,6 @@
  let btnOnPage = document.getElementById("clickme")
  let colorHistoryDiv = document.getElementById("colorHistory");
+ let clearBtn = document.getElementById("clear");
 
  const colors = ["#FF0000 ",
      " #00FF00",
@@ -29,4 +30,15 @@
      colorHistoryItem.classList.add("colorHistoryItem");
      colorHistoryItem.textContent = bgColor;
      colorHistoryDiv.prepend(colorHistoryItem);
+
+
+
+
+ });
+
+
+ clearBtn.addEventListener("click", () => {
+     document.body.style.backgroundColor = "";
+
+     colorHistoryDiv.innerHTML = "";
  });
