@@ -5,14 +5,23 @@
     }
     
     body {
-        text-align: center;
         margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .container {
+        margin-top: 30px;
+        text-align: center;
+        justify-items: center;
     }
     
     #clickme {
         margin-top: 80px;
         height: 50px;
-        width: 15%;
+        width: 35%;
         font-size: 20px;
         font-weight: bolder;
         border-radius: 20px;
@@ -23,7 +32,7 @@
     #clear {
         margin-top: 80px;
         height: 50px;
-        width: 15%;
+        width: 35%;
         font-size: 20px;
         font-weight: bolder;
         border-radius: 20px;
@@ -34,7 +43,8 @@
     #box {
         height: auto;
         width: 500px;
-        border: 2px solid black;
+        border: 3px solid black;
+        margin-top: 50px;
     }
     
     .colorHistoryItem {
